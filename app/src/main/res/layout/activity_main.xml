@@ -15,6 +15,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -34,12 +39,13 @@
                     android:layout_weight="1">
 
                     <TextView
-                        android:text="@string/SoldTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="10dp"
                         android:id="@+id/soldTitle"
-                        android:textColor="@android:color/background_light" />
+                        android:textColor="@android:color/background_light"
+                        android:text="@string/SoldTitle"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -66,13 +72,13 @@
                     android:layout_weight="1">
 
                     <TextView
-                        android:text="TextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        tools:text="@string/RevenueTitle"
                         android:padding="10dp"
                         android:id="@+id/revenueTitle"
-                        android:textColor="@android:color/background_light" />
+                        android:textColor="@android:color/background_light"
+                        android:text="@string/RevenueTitle"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -97,21 +103,20 @@
             android:layout_weight="1">
 
             <Button
-                android:text="Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/updateButton"
-                tools:text="@string/UpdateButton"
-                android:contentDescription="I lied"
                 android:backgroundTint="@color/colorPrimaryDark"
                 android:padding="20dp"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                android:text="@string/UpdateButton"
+                android:onClick="onClickUpdate" />
 
             <TextView
-                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/errorBox" />
+                android:id="@+id/errorBox"
+                android:textAlignment="center" />
         </LinearLayout>
     </LinearLayout>
 
